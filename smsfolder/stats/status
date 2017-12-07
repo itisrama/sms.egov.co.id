@@ -1,0 +1,9 @@
+Status:	16-02-26 07:04:18,	riiiriii--------------------------------------------------------
+GSM0:	16-02-26 07:04:16,	Receiving,	6,	0,	0,	ssi: -75 dBm (Good), ber: < 0.2 %
+GSM1:	16-02-26 07:04:11,	Idle,		7,	0,	0,	ssi: -71 dBm (Excellent), ber: < 0.2 %
+GSM2:	16-02-26 07:04:15,	Idle,		14,	0,	0,	ssi: -73 dBm (Excellent), ber: < 0.2 %
+GSM3:	16-02-26 07:04:10,	Idle,		3,	0,	0,	ssi: -75 dBm (Good), ber: < 0.2 %
+GSM4:	16-02-26 07:01:51,	Receiving,	1,	0,	0,	ssi: -79 dBm (Good), ber: < 0.2 %
+GSM5:	16-02-26 07:04:15,	Idle,		0,	0,	0,	ssi: -77 dBm (Good), ber: < 0.2 %
+GSM6:	16-02-26 07:04:10,	Idle,		1,	0,	0,	ssi: -71 dBm (Excellent), ber: < 0.2 %
+GSM7:	16-02-26 07:04:11,	Idle,		7,	0,	0,	ssi: -97 dBm (Marginal), ber: < 0.2 %

@@ -1,0 +1,330 @@
+#com_gtsms .command {
+	margin-bottom: 10px !important;
+	padding: 0;	
+	min-height: 20px;
+}
+#com_gtsms .table th label {
+	font-weight: bold;
+	text-align: center;
+}
+
+#com_gtsms .table td {
+	vertical-align: middle;
+}
+
+#com_gtsms .table td.actions {
+	text-align: center;
+}
+
+#com_gtsms .table td.longtext {
+	white-space: normal !important;
+	min-width: 150px;
+}
+
+#com_gtsms .jkcolumn {
+	overflow: visible;
+}
+
+#com_gtsms .jkcolumn > div {
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+	overflow: visible;
+}
+
+#com_gtsms .table-sorted tr {
+	cursor: pointer;
+}
+#com_gtsms .table-sorted tr.placeholder {
+	background: none repeat scroll 0 0 red;
+	border: medium none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#com_gtsms .table-sorted tr.placeholder:before {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: transparent -moz-use-text-color transparent red;
+	border-image: none;
+	border-style: solid none solid solid;
+	border-width: 10px medium 10px 10px;
+	content: "";
+	height: 0;
+	left: -10px;
+	margin-top: -10px;
+	position: absolute;
+	width: 0;
+}
+
+#com_gtsms .nav p.lead {
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+#com_gtsms tr.head td {
+	background-color: gray;
+	color: white;
+}
+
+#com_gtsms .date,
+#com_gtsms .date small {
+	white-space: nowrap;
+}
+
+#com_gtsms .contact {
+
+}
+
+#com_gtsms td.contact {
+	border-left: none;
+	border-right: none;
+	width: 15%;
+	padding-left: 0;
+}
+
+#com_gtsms td.type {
+	border-right: none;
+	width: 50px;
+}
+
+#com_gtsms td.count {
+	padding-left: 0;
+	border-left: none;
+	width: 50px;
+}
+
+#com_gtsms td.count span {
+	background-color: #999;
+	border-radius: 13px;
+	color: #fff;
+	display: inline-block;
+	font-size: 0.8em;
+	height: 25px;
+	line-height: 25px;
+	min-width: 25px;
+	text-align: center;
+	padding: 0 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#com_gtsms .currency {
+	white-space: nowrap;
+}
+
+#com_gtsms .table .btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#com_gtsms .tablegrid {
+	float: left;
+	width: 100%;
+	overflow-x: auto;
+}
+
+#com_gtsms .form-inline {
+	margin-bottom: -10px;
+}
+#com_gtsms .form-inline .form-group {
+	margin-bottom: 0;
+}
+#com_gtsms .form-inline label, 
+#com_gtsms .form-inline input, 
+#com_gtsms .form-inline .btn, 
+#com_gtsms .form-inline button, 
+#com_gtsms .form-inline select, 
+#com_gtsms .form-inline textarea {
+	margin-bottom: 10px;
+}
+
+#com_gtsms h1 select {
+	display: inline-block;
+	font-size: .6em;
+	margin: 0;
+}
+
+@media (max-width: 992px) {
+	#com_gtsms .form-inline .pull-right {
+		float: none !important;
+	}
+}
+
+#com_gtsms .bubble {
+	position:relative;
+	padding:15px 15px 40px;
+	margin:0;
+	border:5px solid #ccc;
+	color:#333;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius: 10px;
+	width: 70%;
+	min-width: 300px;
+}
+#com_gtsms .bubble hr {
+	display: none;
+}
+#com_gtsms .bubble small {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 15px;
+	background-color: #ccc;
+	color: #fff;
+	border-radius: 0 0 4px 4px;
+	font-weight: normal !important;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+#com_gtsms .bubble > div {
+	display: table;
+}
+#com_gtsms .bubble > div > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#com_gtsms .bubble .msg {
+	width: 100%;
+}
+
+#com_gtsms .bubble .icon {
+	padding-right: 10px;
+}
+
+#com_gtsms .bubble-left {
+	margin-left:25px;
+}
+
+#com_gtsms .bubble-right {
+	margin-right:25px;
+}
+
+#com_gtsms .bubble:before {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:40px; /* controls horizontal position */
+  border-width:20px 20px 0;
+  border-style:solid;
+  border-color:#ccc transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the smaller  triangle */
+#com_gtsms .bubble:after {
+  content:"";
+  position:absolute;
+  bottom:-13px; /* value = - border-top-width - border-bottom-width */
+  left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+  border-width:13px 13px 0;
+  border-style:solid;
+  border-color:#fff transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+#com_gtsms .bubble-left:before {
+  top:10px; /* controls vertical position */
+  bottom:auto;
+  left:-23px; /* value = - border-left-width - border-right-width */
+  border-width:15px 23px 15px 0;
+  border-color:transparent #ccc;
+}
+
+#com_gtsms .bubble-left:after {
+  top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+  bottom:auto;
+  left:-15px; /* value = - border-left-width - border-right-width */
+  border-width:9px 15px 9px 0;
+  border-color:transparent #fff;
+}
+
+#com_gtsms .bubble-right:before {
+  top:10px; /* controls vertical position */
+  bottom:auto;
+  left:auto;
+  right:-23px; /* value = - border-left-width - border-right-width */
+  border-width:15px 0 15px 23px;
+  border-color:transparent #ccc;
+}
+
+/* creates the smaller  triangle */
+#com_gtsms .bubble-right:after {
+  top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+  bottom:auto;
+  left:auto;
+  right:-15px; /* value = - border-left-width - border-right-width */
+  border-width:9px 0 9px 15px;
+  border-color:transparent #fff;
+}
+
+#com_gtsms .message {
+	white-space: normal;
+	min-width: 300px;
+}
+#com_gtsms .message hr {
+	margin: 5px 0;
+}
+
+#com_gtsms #table-filter hr {
+	margin: 15px 0;
+}
+
+#com_gtsms .modem-container {
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+#com_gtsms .modem-container .form-group {
+	margin-bottom: 5px;
+}
+#com_gtsms .modem-container label {
+	margin-bottom: 0;
+}
+#com_gtsms .modem {
+	background: url('../images/signal-none.png') no-repeat left center;
+	padding-left: 50px;
+	line-height: 30px;
+	height: 30px;
+	position: relative;
+	font-weight: bold;
+	margin: 0 0 20px !important;
+}
+#com_gtsms .modem span {
+	position: absolute;
+	left: 0;
+	top: -5px;
+	font-size: 0.8em;
+}
+#com_gtsms .modem.status {
+	background-image: url('../images/signal/signal-unknown.png');
+}
+#com_gtsms .modem.status0 {
+	background-image: url('../images/signal/signal-bad.png');
+}
+#com_gtsms .modem.status1 {
+	background-image: url('../images/signal/signal-ok.png');
+}
+#com_gtsms .modem.status2 {
+	background-image: url('../images/signal/signal-good.png');
+}
+#com_gtsms .modem.status3,
+#com_gtsms .modem.status4 {
+	background-image: url('../images/signal/signal-full.png');
+}
+
+@media (max-width: 767px) {
+	#com_gtsms #table-filter {
+		display: none;
+	}
+}

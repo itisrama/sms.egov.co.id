@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="basic"
+		label="COM_GTSMS_FIELDSET_BASIC"
+		description="COM_GTSMS_FIELDSET_BASIC_DESC">
+		
+		<field
+			name="def_calling_code"
+			type="text"
+			class="input-mini"
+			label="COM_GTSMS_FIELD_DEF_CALLING_CODE"
+			description="COM_GTSMS_FIELD_DEF_CALLING_CODE"
+			default="62"
+		/>
+		<field
+			name="outgoing_url"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_OUTGOING_URL"
+			description="COM_GTSMS_FIELD_OUTGOING_URL_DESC"
+		/>
+		<field
+			name="modem_status_url"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_MODEM_STATUS_URL"
+			description="COM_GTSMS_FIELD_MODEM_STATUS_URL"
+		/>
+		<field
+			name="msisdn_lookup_url"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_MSISDN_LOOKUP_URL"
+			description="COM_GTSMS_FIELD_MSISDN_LOOKUP_URL"
+		/>
+		<field
+			name="is_server"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="0"
+			label="COM_GTSMS_FIELD_IS_SERVER"
+			description="COM_GTSMS_FIELD_IS_SERVER">
+			<option
+				value="1">COM_GTSMS_SERVER</option>
+			<option
+				value="0">COM_GTSMS_CLIENT</option>
+		</field>
+	</fieldset>
+	<fieldset name="server_directory"
+		label="COM_GTSMS_FIELDSET_DIRECTORY"
+		description="COM_GTSMS_FIELDSET_DIRECTORY_DESC">
+		>
+
+		<field
+			name="incoming_dir"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_INCOMING_DIR"
+			description="COM_GTSMS_FIELD_INCOMING_DIR"
+		/>
+		<field
+			name="outgoing_dir"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_OUTGOING_DIR"
+			description="COM_GTSMS_FIELD_OUTGOING_DIR"
+		/>
+		<field
+			name="sent_dir"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_SENT_DIR"
+			description="COM_GTSMS_FIELD_SENT_DIR"
+		/>
+		<field
+			name="failed_dir"
+			type="text"
+			filter="url"
+			label="COM_GTSMS_FIELD_FAILED_DIR"
+			description="COM_GTSMS_FIELD_FAILED_DIR"
+		/>
+		<field
+			name="stat_dir"
+			type="text"
+			label="COM_GTSMS_FIELD_STAT_DIR"
+			description="COM_GTSMS_FIELD_STAT_DIR"
+		/>
+		<field
+			name="multi_modem"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="0"
+			label="COM_GTSMS_FIELD_MULTI_MODEM"
+			description="COM_GTSMS_FIELD_MULTI_MODEM">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_gtsms"
+			section="component"
+		/>
+	</fieldset>
+</config>

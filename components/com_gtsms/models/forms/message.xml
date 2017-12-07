@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields>
+		<fieldset name="item">
+			<field name="id"
+				type="althidden"
+				readonly="true" 
+			/>
+			<field name="msisdn_ids"
+				type="selectize"
+				task="selectize.getContactAndGroup"
+				multiple="true"
+				create="true"
+				preload="false"
+				requests="{}"
+				label="COM_GTSMS_FIELD_DESTINATION"
+				class="input-xxlarge"
+				required="true" 
+			/>
+			<field name="modem"
+				type="modem"
+				label="COM_GTSMS_FIELD_MODEM"
+				class="input-large"
+				required="true" 
+			>
+				<option>COM_GTSMS_OPT_SELECT_MODEM</option>
+			</field>
+			<field name="category_id"
+				type="mscategory"
+				label="COM_GTSMS_FIELD_CATEGORY_ID"
+				class="input-large"
+			>
+				<option>COM_GTSMS_OPT_SELECT_CATEGORY</option>
+			</field>
+			<field name="message"
+				type="textarea"
+				label="COM_GTSMS_FIELD_MESSAGE"
+				class="input-xxlarge"
+				rows="5"
+				required="true" 
+			/>
+		</fieldset>
+	</fields>
+</form>

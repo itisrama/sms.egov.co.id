@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields>
+		<fieldset name="main">
+			<field name="year"
+				type="altcalendar"
+				id="year"
+				label="COM_GTSMS_FIELD_YEAR"
+				class="input-mini"
+				minView="years"
+				format="%Y"
+				filter=" "
+				required="true"
+			/>
+			<field name="file_excel"
+				type="file"
+				accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+				label="COM_GTSMS_FIELD_FILE_EXCEL"
+				class="input-xlarge"
+				required="true"
+			/>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,23 @@
+.mod_gtsms_count #alertMessages {
+	color: #fff;
+	animation: blinker 1s infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
+#countUnread {
+	color: #333;
+	background-color: #c4c4c4;
+	line-height: 18px;
+	height: 18px;
+	min-width: 18px;
+	border-radius: 9px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 5px;
+	font-size: 0.8em;
+	vertical-align: top;
+	padding: 0 5px;
+}
