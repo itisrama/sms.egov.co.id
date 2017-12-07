@@ -1,0 +1,46 @@
+.mod_gtsms_status h3 {
+	margin: 0 0 10px;
+}
+.mod_gtsms_status .modem-container {
+	padding: 0;
+}
+.mod_gtsms_status .modem {
+	background: url('../images/signal-none.png') no-repeat left center;
+	padding-left: 35px;
+	line-height: 25px;
+	height: 25px;
+	margin: 10px 0;
+	cursor: pointer;
+	position: relative;
+}
+
+.mod_gtsms_status .modem.status {
+	background-image: url('../images/signal-unknown.png');
+}
+.mod_gtsms_status .modem.status0 {
+	background-image: url('../images/signal-bad.png');
+}
+.mod_gtsms_status .modem.status1 {
+	background-image: url('../images/signal-ok.png');
+}
+.mod_gtsms_status .modem.status2 {
+	background-image: url('../images/signal-good.png');
+}
+.mod_gtsms_status .modem.status3,
+.mod_gtsms_status .modem.status4 {
+	background-image: url('../images/signal-full.png');
+}
+.mod_gtsms_status .modem:hover {
+	color: #fff;
+}
+.mod_gtsms_status .modem span {
+	position: absolute;
+	left: 0;
+	top: -5px;
+}
+.modem.modal .form-group {
+	margin-bottom: 5px;
+}
+.modem.modal label {
+	margin-bottom: 0;
+}

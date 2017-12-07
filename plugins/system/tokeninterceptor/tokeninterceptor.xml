@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="2.5" group="system" method="upgrade">
+    <name>System - Invalid Token Interceptor</name>
+    <creationDate>28-03-2013</creationDate>
+    <author>Joomunited</author>
+    <authorEmail>contact@joomunited.com</authorEmail>
+    <authorUrl>http://www.joomunited.com</authorUrl>
+    <copyright>Copyright (C) 2013 JoomUnited (http://www.joomunited.com). All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description>System plugin to remove invalid token</description>
+    <files folder="site">
+        <filename plugin="tokeninterceptor">tokeninterceptor.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_tokeninterceptor.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.plg_system_tokeninterceptor.ini</language>
+    </languages>
+    <config>
+	<fields name="params">
+		<fieldset name="basic">
+                    <field
+                            name="use_backend"
+                            type="radio"
+                            default="0"
+                            label="PLG_SYSTEM_TOKENINTERCEPTOR_USE_BACKEND"
+                            description="PLG_SYSTEM_TOKENINTERCEPTOR_USE_BACKEND" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field
+                            name="use_frontend"
+                            type="radio"
+                            default="1"
+                            label="PLG_SYSTEM_TOKENINTERCEPTOR_USE_FRONTEND"
+                            description="PLG_SYSTEM_TOKENINTERCEPTOR_USE_FRONTEND" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field
+                            name="message"
+                            type="text"
+                            default=""
+                            filter="string"
+                            label="PLG_SYSTEM_TOKENINTERCEPTOR_MESSAGE_LABEL"
+                            description="PLG_SYSTEM_TOKENINTERCEPTOR_MESSAGE_LABEL" 
+                    />
+                </fieldset>
+        </fields>
+    </config>
+</extension>

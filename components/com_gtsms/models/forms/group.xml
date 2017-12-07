@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form addfieldpath="/administrator/components/com_gtsms/models/fields">
+	<fields>
+		<fieldset name="item">
+			<field name="id"
+				type="althidden"
+				readonly="true" 
+			/>
+			<field name="name"
+				type="text"
+				label="COM_GTSMS_FIELD_NAME"
+				class="input-medium"
+				required="true" 
+			/>
+			<field name="msisdn_ids"
+				type="selectize"
+				task="selectize.getContact"
+				multiple="true"
+				create="true"
+				preload="false"
+				requests="{}"
+				label="COM_GTSMS_FIELD_MSISDN"
+				class="input-xxlarge"
+				required="true" 
+			/>
+		</fieldset>
+		<fieldset name="categories">
+			<field name="category_ids"
+				type="selectize"
+				task="selectize.getItem"
+				multiple="true"
+				requests="{table: 'category'}"
+				label="COM_GTSMS_FIELD_CATEGORY_IDS"
+				class="input-xlarge"
+			/>
+		</fieldset>	
+		<fieldset name="meta">
+			<field name="created_v"
+				type="text"
+				label="COM_GTSMS_FIELD_CREATED_DATE"
+				class="input-small"
+				readonly="true"
+			/>
+			<field name="created_by_v"
+				type="text"
+				label="COM_GTSMS_FIELD_CREATED_BY"
+				class="input-medium"
+				readonly="true"
+			/>
+			<field name="modified_v"
+				type="text"
+				label="COM_GTSMS_FIELD_MODIFIED_DATE"
+				class="input-small"
+				readonly="true"
+			/>
+			<field name="modified_by_v"
+				type="text"
+				label="COM_GTSMS_FIELD_MODIFIED_BY"
+				class="input-medium"
+				readonly="true"
+			/>
+		</fieldset>
+	</fields>
+</form>
